@@ -16,7 +16,7 @@ public class HelloClient {
 	Hello h = (Hello) registry.lookup("HelloService");
 
 	// Remote method invocation
-	String res = h.sayHello();
+	String res = h.sayHello("Client_Name");
 	System.out.println(res);
 
 	} catch (Exception e)  {

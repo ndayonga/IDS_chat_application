@@ -11,7 +11,7 @@ public  class HelloImpl implements Hello {
 		message = s ;
 	}
 
-	public String sayHello() throws RemoteException {
-		return message ;
+	public String sayHello(String name) throws RemoteException {
+		return message + " " + name ;
 	}
 }
