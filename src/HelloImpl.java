@@ -1,4 +1,6 @@
+// package src;
 
+// import src.Hello;
 import java.rmi.*;
 
 public  class HelloImpl implements Hello {
