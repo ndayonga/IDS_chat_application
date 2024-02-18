@@ -1,6 +1,17 @@
 //put the classpath righ
 export CLASSPATH=$CLASSPATH:<yourpath>/classes
 
+// Compile in this order :
+javac -d $CLASSPATH Info_itf.java
+
+javac -d $CLASSPATH Chat.java
+
+javac -d $CLASSPATH ChatImpl.java
+
+javac -d $CLASSPATH ChatServer.java
+
+javac -d $CLASSPATH ChatClient.java
+
 //launch rmiregistry on mandelbrot on port 6090
 rmiregistry 6090 &
 
