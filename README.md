@@ -5,7 +5,7 @@ export CLASSPATH=$CLASSPATH:<yourpath>/classes
 rmiregistry 6090 &
 
 //launch the server
-java -Djava.rmi.server.hostname=localhost  -cp classes HelloServer 6090
+java -Djava.rmi.server.hostname=localhost  -cp classes ChatServer 6090
 
 //launch the client
-java -cp classes/ HelloClient localhost 6090
+java -cp classes/ ChatClient localhost 6090 <name>
